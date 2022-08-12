@@ -1,0 +1,44 @@
+.section {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  word-break: break-all;
+  /*DESKTOP*/
+  /*PHABLET*/
+}
+
+@media screen and (max-width: 1070px) {
+  .section {
+    max-width: 850px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .section {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.section p {
+  /*TABLET*/
+}
+
+@media screen and (max-width: 735px) {
+  .section p {
+    padding: 0 2rem;
+    max-width: 567px;
+  }
+}
+
+.narrow p {
+  /*TABLET*/
+}
+
+@media screen and (max-width: 735px) {
+  .narrow p {
+    padding: 0;
+    max-width: 527px;
+  }
+}

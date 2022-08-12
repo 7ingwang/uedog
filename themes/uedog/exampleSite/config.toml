@@ -1,0 +1,23 @@
+baseURL = "https://uedog.com/"
+title = "UeDog"
+theme = "uedog"
+googleAnalytics = ""
+languageCode = "en-us"
+languageName = "En"
+paginate = "4"
+summaryLength = "15"
+
+# 设置blackfriday为默认的Markdown引擎，打开HTML内联
+[markup]
+defaultMarkdownHandler = "blackfriday"
+
+[[menu.main]]
+# URL = "about"
+# name = "About"
+# weight = 1
+
+[social]
+# dribbble = "#"
+instagram = "https://instagram.com/pixwind"
+unsplash = "https://unsplash.com/@blueskin"
+pixwind = "http://pixwind.com"
