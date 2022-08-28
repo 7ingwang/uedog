@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg"  width="100vw" height="100vh">
+    <rect x="100" y="100" width="60" height="60" fill="red">
+        <set attributeName="x" attributeType="XML" to="200" begin="3s" />
+    </rect>
+</svg>

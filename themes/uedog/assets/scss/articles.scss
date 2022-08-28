@@ -47,12 +47,11 @@
 
     /*DESKTOP*/
     @media screen and (max-width: $desktop){
-      width: 80%;
     }
 
     /*TABLET*/
     @media screen and (max-width: $tablet){
-      width: 100%;
+      margin: 40px 0;
     }
 }
 

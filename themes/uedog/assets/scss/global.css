@@ -604,7 +604,7 @@ ol li::before {
     display: none;
   }
   .footer-text {
-    margin: 120px auto 100px;
+    margin: 40px auto;
   }
 }
 
@@ -1898,13 +1898,13 @@ th:last-child {
 
 @media screen and (max-width: 1070px) {
   .heading-container {
-    width: 80%;
+
   }
 }
 
 @media screen and (max-width: 735px) {
   .heading-container {
-    width: 100%;
+
   }
 }
 
@@ -2551,7 +2551,6 @@ th:last-child {
   .article-hero::before {
     content: "";
     width: 100%;
-    height: 20px;
     background: var(--primary);
     position: absolute;
     left: 0;
