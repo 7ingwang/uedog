@@ -93,8 +93,7 @@
       <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://uedog.com/post/%E8%AE%A9svg%E8%87%AA%E5%B7%B1%E5%8A%A8%E8%B5%B7%E6%9D%A5/</guid>
-      <description>SVG animation with SMIL Demo：http://terry.wang/demo/svg-animation-SMIL/ SMIL是什么？ 全称 Synchronized Multimedia Integration Language SMIL 允许你做这些事情：
- 动画元素的数值属性（X，Y,&amp;hellip;） 动画属性变换（平移或旋转或缩放） 动画颜色变换 沿着指定路径运动 CSS3 不能  SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate 元素即可。重要的是，SMIL 在各大浏览器都支持。</description>
+      <description>.section.narrow:first-child{ max-width: 100%; padding: 0;} .post-content{ max-width: 100%;} .container{ display: flex; justify-content: space-between; background: #002560 url(/images/SVG-Animation-SMIL/bg.</description>
     </item>
     
     <item>

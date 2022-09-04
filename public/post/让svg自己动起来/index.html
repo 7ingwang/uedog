@@ -25,24 +25,21 @@
 
 
 <title>让 SVG 自己动起来 | UeDog</title>
-<meta name="description" content="SVG animation with SMIL Demo：http://terry.wang/demo/svg-animation-SMIL/ SMIL是什么？ 全称 Synchronized Multimedia Integration Language SMIL 允许你做这些事情：
- 动画元素的数值属性（X，Y,&hellip;） 动画属性变换（平移或旋转或缩放） 动画颜色变换 沿着指定路径运动 CSS3 不能  SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate 元素即可。重要的是，SMIL 在各大浏览器都支持。">
+<meta name="description" content=".section.narrow:first-child{ max-width: 100%; padding: 0;} .post-content{ max-width: 100%;} .container{ display: flex; justify-content: space-between; background: #002560 url(/images/SVG-Animation-SMIL/bg.">
 <meta property="og:title" content="让 SVG 自己动起来 | UeDog">
 <meta property="og:site_name" content="UeDog">
-<meta property="og:description" content="SVG animation with SMIL Demo：http://terry.wang/demo/svg-animation-SMIL/ SMIL是什么？ 全称 Synchronized Multimedia Integration Language SMIL 允许你做这些事情：
- 动画元素的数值属性（X，Y,&hellip;） 动画属性变换（平移或旋转或缩放） 动画颜色变换 沿着指定路径运动 CSS3 不能  SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate 元素即可。重要的是，SMIL 在各大浏览器都支持。">
+<meta property="og:description" content=".section.narrow:first-child{ max-width: 100%; padding: 0;} .post-content{ max-width: 100%;} .container{ display: flex; justify-content: space-between; background: #002560 url(/images/SVG-Animation-SMIL/bg.">
 <meta property="og:url" content="https://uedog.com/post/%E8%AE%A9svg%E8%87%AA%E5%B7%B1%E5%8A%A8%E8%B5%B7%E6%9D%A5/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content='https://uedog.com/images/svg-demo.png'><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content='https://uedog.com/uploads/default.jpg'><meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="让 SVG 自己动起来 | UeDog">
 
 	<link rel="canonical" href="https://uedog.com/post/%E8%AE%A9svg%E8%87%AA%E5%B7%B1%E5%8A%A8%E8%B5%B7%E6%9D%A5/">
 
 
-	<meta name="twitter:description" content="SVG animation with SMIL Demo：http://terry.wang/demo/svg-animation-SMIL/ SMIL是什么？ 全称 Synchronized Multimedia Integration Language SMIL 允许你做这些事情：
- 动画元素的数值属性（X，Y,&hellip;） 动画属性变换（平移或旋转或缩放） 动画颜色变换 沿着指定路径运动 CSS3 不能  SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate 元素即可。重要的是，SMIL 在各大浏览器都支持。">
-<meta name="twitter:image" content="https://uedog.com/images/svg-demo.png">
+	<meta name="twitter:description" content=".section.narrow:first-child{ max-width: 100%; padding: 0;} .post-content{ max-width: 100%;} .container{ display: flex; justify-content: space-between; background: #002560 url(/images/SVG-Animation-SMIL/bg.">
+<meta name="twitter:image" content="https://uedog.com/uploads/default.jpg">
 <meta property="article:published_time" content="2022-07-24T00:00:00&#43;00:00">
 	<meta property="article:updated_time" content="2022-07-24T00:00:00&#43;00:00">
 
@@ -137,10 +134,6 @@
         </div>
     </header>
     
-    <div class="article-hero-image" id="ArticleImage__Hero">
-        <img src="/images/svg-demo.png">
-     </div>
-    
 </section>
 
 
@@ -161,51 +154,27 @@
 
 
     <article  id="articleContent" class="post-content" style="position:relative;">
-        
+        <style>
+.section.narrow:first-child{ max-width: 100%; padding: 0;}
+.post-content{ max-width: 100%;}
+.container{ display: flex; justify-content: space-between; background: #002560 url(/images/SVG-Animation-SMIL/bg.png) no-repeat center bottom; background-size: cover; background-attachment: fixed;}
+.portal{ position: relative; padding: 40px 0 0;}
+.portal h6{ position: relative; left: -10px; padding-bottom: 10px; text-align: center; color: #fff; font-family: ui-monospace;}
+.portal svg{ width: 100%;}
+.portal-l, .portal-r{ margin-top: 8%; }
+.portal-l{ left: 8%;}
+.portal-r{ right: 8%;}
+@media(max-width:575px){
+.portal-l, .portal-r{ margin-top: 0; }
+.portal-l{ left: 0;}
+.portal-r{ right: 0;}
+}
+</style>
 
-<h1 id="svg-animation-with-smil">SVG animation with SMIL</h1>
-
-<h6 id="demo-http-terry-wang-demo-svg-animation-smil">Demo：<a href="http://terry.wang/demo/svg-animation-SMIL/">http://terry.wang/demo/svg-animation-SMIL/</a></h6>
-
-<h2 id="smil是什么">SMIL是什么？</h2>
-
-<p>全称 Synchronized Multimedia Integration Language
-SMIL 允许你做这些事情：</p>
-
-<ul>
-<li>动画元素的数值属性（X，Y,&hellip;）</li>
-<li>动画属性变换（平移或旋转或缩放）</li>
-<li>动画颜色变换</li>
-<li>沿着指定路径运动 CSS3 不能</li>
-</ul>
-
-<p>SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate 元素即可。重要的是，SMIL 在各大浏览器都支持。</p>
-
-<h2 id="smil-animation-元素及效果概览">SMIL Animation 元素及效果概览</h2>
-
-<p><code>
-&lt;set&gt;
-&lt;animate&gt;
-&lt;animateColor&gt;
-&lt;animateTransform&gt;
-&lt;animateMotion&gt;
-</code></p>
-
-<p><code>&lt;set&gt;</code> 没有动画效果，可以实现基本的延迟功能。
-实例：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">xmlns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>  <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1000&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1000&#34;</span>&gt;
-    &lt;<span style="color:#f92672">rect</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;60&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;60&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>&gt;
-        &lt;<span style="color:#f92672">set</span> <span style="color:#a6e22e">attributeName</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;x&#34;</span> <span style="color:#a6e22e">attributeType</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;XML&#34;</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;60&#34;</span> <span style="color:#a6e22e">begin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3s&#34;</span> /&gt;
-    &lt;/<span style="color:#f92672">rect</span>&gt;
-&lt;/<span style="color:#f92672">svg</span>&gt;</code></pre></div>
-<p><a href="/svg/svg-animation-demo-set.svg" title="查看实例" target="_blank">查看实例</a></p>
-
-<p>未完待续……</p>
-
-<p>下面是本人在实际项目中的实例：</p>
-
-<div style="text-align: center;">
-        <svg width="81%" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<div class="container">
+    <div class="portal portal-l">
+      <h6>指标管理</h6>
+      <svg width="608px" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <linearGradient x1="100%" y1="50%" x2="9.66285979%" y2="50%" id="linearGradient-91q5iw_dy7-1">
                     <stop stop-color="#002CC3" stop-opacity="0.839925699" offset="0%"></stop>
@@ -283,7 +252,7 @@ SMIL 允许你做这些事情：</p>
                         </g>
                         <g id="Group" transform="translate(1.000000, 0.000000)" fill-rule="nonzero" opacity="0.3">
                             <g id="cube-planet-wall">
-                                <polygon id="Path-Copy-2" fill="url(#linearGradient-91q5iw_dy7-4)" points="287.314111 9.61934502e-14 0.574029208 108.977004 8.66088687e-17 263.978596 286.740081 154.986451"></polygon>
+                                <polygon id="Path-Copy-2" fill="url(#linearGradient-91q5iw_dy7-4)" points="287.314111 9.61934502e-14 0.574029208 108.977004 8.66067187e-17 263.978596 286.740081 154.986451"></polygon>
                                 <polyline id="Path-Copy-3" fill="url(#linearGradient-91q5iw_dy7-5)" points="287.314111 -1.34796649e-15 608.013311 105.194478 608.013311 259.016592 286.741886 154.814515"></polyline>
                             </g>
                         </g>
@@ -370,8 +339,10 @@ SMIL 允许你做这些事情：</p>
             </g>
         </svg>
 
-
-        <svg width="81%" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  </div>
+    <div class="portal portal-c">
+      <h6>指标创建</h6>
+      <svg width="608px" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <linearGradient x1="100%" y1="50%" x2="9.66285979%" y2="50%" id="linearGradient-0jfn3jpw4c-1">
                     <stop stop-color="#002CC3" stop-opacity="0.839925699" offset="0%"></stop>
@@ -543,10 +514,10 @@ SMIL 允许你做这些事情：</p>
                 </g>
             </g>
         </svg>
-
-
-
-        <svg width="81%" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  </div>
+    <div class="portal portal-r">
+      <h6>指标地图</h6>
+      <svg width="608px" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <linearGradient x1="100%" y1="50%" x2="9.66285979%" y2="50%" id="linearGradient-aq661jz72f-1">
                     <stop stop-color="#002CC3" stop-opacity="0.839925699" offset="0%"></stop>
@@ -656,8 +627,12 @@ SMIL 允许你做这些事情：</p>
                 </g>
             </g>
         </svg>
+  </div>
+  </div>
 
-</div>
+
+
+
 
     </article>
 

@@ -1,57 +1,34 @@
 ---
 title: 让 SVG 自己动起来
 date: 2022-07-24
-hero: /images/svg-demo.png
+<!-- hero: /images/svg-demo.png -->
 excerpt: SVG animation with SMIL
 
 authors:
   - Hugo authors
 
 ---
+<style>
+.section.narrow:first-child{ max-width: 100%; padding: 0;}
+.post-content{ max-width: 100%;}
+.container{ display: flex; justify-content: space-between; background: #002560 url(/images/SVG-Animation-SMIL/bg.png) no-repeat center bottom; background-size: cover; background-attachment: fixed;}
+.portal{ position: relative; padding: 40px 0 0;}
+.portal h6{ position: relative; left: -10px; padding-bottom: 10px; text-align: center; color: #fff; font-family: ui-monospace;}
+.portal svg{ width: 100%;}
+.portal-l, .portal-r{ margin-top: 8%; }
+.portal-l{ left: 8%;}
+.portal-r{ right: 8%;}
+@media(max-width:575px){
+.portal-l, .portal-r{ margin-top: 0; }
+.portal-l{ left: 0;}
+.portal-r{ right: 0;}
+}
+</style>
 
-
-# SVG animation with SMIL
-###### Demo：http://terry.wang/demo/svg-animation-SMIL/
-
-## SMIL是什么？
-全称 Synchronized Multimedia Integration Language
-SMIL 允许你做这些事情：
-
-* 动画元素的数值属性（X，Y,...）
-* 动画属性变换（平移或旋转或缩放）
-* 动画颜色变换
-* 沿着指定路径运动 CSS3 不能
-
-SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate 元素即可。重要的是，SMIL 在各大浏览器都支持。
-
-## SMIL Animation 元素及效果概览
-`
-<set>
-<animate>
-<animateColor>
-<animateTransform>
-<animateMotion>
-`
-
-`<set>` 没有动画效果，可以实现基本的延迟功能。
-实例：
-```html
-<svg xmlns="http://www.w3.org/2000/svg"  width="1000" height="1000">
-    <rect x="200" y="200" width="60" height="60" fill="red">
-        <set attributeName="x" attributeType="XML" to="60" begin="3s" />
-    </rect>
-</svg>
-```
-<a href="/svg/svg-animation-demo-set.svg" title="查看实例" target="_blank">查看实例</a>
-
-未完待续……
-
-
-
-下面是本人在实际项目中的实例：
-
-<div style="text-align: center;">
-        <svg width="81%" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<div class="container">
+    <div class="portal portal-l">
+      <h6>指标管理</h6>
+      <svg width="608px" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <linearGradient x1="100%" y1="50%" x2="9.66285979%" y2="50%" id="linearGradient-91q5iw_dy7-1">
                     <stop stop-color="#002CC3" stop-opacity="0.839925699" offset="0%"></stop>
@@ -129,7 +106,7 @@ SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate �
                         </g>
                         <g id="Group" transform="translate(1.000000, 0.000000)" fill-rule="nonzero" opacity="0.3">
                             <g id="cube-planet-wall">
-                                <polygon id="Path-Copy-2" fill="url(#linearGradient-91q5iw_dy7-4)" points="287.314111 9.61934502e-14 0.574029208 108.977004 8.66088687e-17 263.978596 286.740081 154.986451"></polygon>
+                                <polygon id="Path-Copy-2" fill="url(#linearGradient-91q5iw_dy7-4)" points="287.314111 9.61934502e-14 0.574029208 108.977004 8.66067187e-17 263.978596 286.740081 154.986451"></polygon>
                                 <polyline id="Path-Copy-3" fill="url(#linearGradient-91q5iw_dy7-5)" points="287.314111 -1.34796649e-15 608.013311 105.194478 608.013311 259.016592 286.741886 154.814515"></polyline>
                             </g>
                         </g>
@@ -216,8 +193,10 @@ SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate �
             </g>
         </svg>
 
-
-        <svg width="81%" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  </div>
+    <div class="portal portal-c">
+      <h6>指标创建</h6>
+      <svg width="608px" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <linearGradient x1="100%" y1="50%" x2="9.66285979%" y2="50%" id="linearGradient-0jfn3jpw4c-1">
                     <stop stop-color="#002CC3" stop-opacity="0.839925699" offset="0%"></stop>
@@ -389,10 +368,10 @@ SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate �
                 </g>
             </g>
         </svg>
-
-
-
-        <svg width="81%" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  </div>
+    <div class="portal portal-r">
+      <h6>指标地图</h6>
+      <svg width="608px" height="auto" viewBox="0 0 608 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <linearGradient x1="100%" y1="50%" x2="9.66285979%" y2="50%" id="linearGradient-aq661jz72f-1">
                     <stop stop-color="#002CC3" stop-opacity="0.839925699" offset="0%"></stop>
@@ -502,8 +481,8 @@ SMIL 的强大之处在于：不需要 CSS，不需要 JS，只需要 animate �
                 </g>
             </g>
         </svg>
-
-</div>
+  </div>
+  </div>
 
 
 
