@@ -1,0 +1,39 @@
+.pagination {
+  z-index: 100;
+  margin: 80px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.pagination:hover {
+  cursor: pointer;
+}
+.pagination a:hover {
+  color: var(--primary);
+}
+.pagination .page-item {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+.pagination .page-item .page-link {
+  display: block;
+  color: var(--grey);
+  min-width: 6rem;
+}
+.pagination .page-item .page-next, .pagination .page-item .page-prev {
+  color: var(--primary);
+}
+.pagination .page-item::before {
+  display: none;
+}
+.pagination .active .page-link {
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=paginator.css.map */

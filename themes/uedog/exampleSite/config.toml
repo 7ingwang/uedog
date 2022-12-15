@@ -1,7 +1,7 @@
 baseURL = "https://uedog.com/"
 title = "UeDog"
 theme = "uedog"
-googleAnalytics = ""
+
 languageCode = "en-us"
 languageName = "En"
 paginate = "4"

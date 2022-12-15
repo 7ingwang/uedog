@@ -1,12 +1,12 @@
-name = "Hugo Novela"
-license = "MIT"
-licenselink = "https://github.com/forestryio/hugo-theme-novela/blob/master/LICENSE"
-description = "A Hugo port of the Novela theme by Narative"
-homepage = "https://hugo-novela-forestry.netlify.com/"
+name = "uedong"
+license = ""
+licenselink = ""
+description = ""
+homepage = "https://uedog.com"
 tags = ["blog"]
-features = ["dark mode", "grid view"]
+features = ["grid view"]
 min_version = "0.65.0"
 
 [author]
-    name = "The New Dynamic"
-    homepage = "https://www.thenewdynamic.com/"
+    name = "Terry.Wang"
+    homepage = "https://terry.wang/"

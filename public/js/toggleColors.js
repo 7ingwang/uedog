@@ -1,4 +1,4 @@
-document.getElementById("themeColorButton").addEventListener("click", toggleColors);
+// document.getElementById("themeColorButton").addEventListener("click", toggleColors);
 
 let bodyElement = document.getElementsByTagName("BODY")[0];
 let moonOrSun = document.getElementById("moonOrSun");

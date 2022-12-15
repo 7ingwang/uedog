@@ -24,14 +24,12 @@
     padding-bottom: 100px;
   }
 }
-
 /*PHABLET*/
 @media screen and (max-width: 540px) {
   .footer-container {
     padding-bottom: 50px;
   }
 }
-
 .footer-hr {
   position: relative;
   margin: 140px auto 50px;
@@ -43,21 +41,21 @@
   .footer-hr {
     margin: 60px auto;
   }
+
   .footer-text {
     margin-bottom: 80px;
   }
 }
-
 /*PHABLET*/
 @media screen and (max-width: 540px) {
   .footer-hr {
     display: none;
   }
+
   .footer-text {
-    margin: 120px auto 100px;
+    margin: 40px auto 40px;
   }
 }
-
 .footer-gradient {
   position: absolute;
   bottom: 0;
@@ -91,20 +89,17 @@
     opacity: 1;
   }
 }
-
 @keyframes fadein {
   to {
     opacity: 1;
   }
 }
-
 /*DESKTOP MEDIUM*/
 @media screen and (max-width: 1280px) {
   .back-arrow-ico-container {
     display: none;
   }
 }
-
 .nav-container {
   position: relative;
   z-index: 100;
@@ -122,14 +117,12 @@
     padding-top: 50px;
   }
 }
-
 /*DESKTOP MEDIUM*/
 @media screen and (max-width: 1280px) {
   .nav-container {
     padding-top: 50px;
   }
 }
-
 .logo-link {
   position: relative;
   display: -webkit-box;
@@ -140,7 +133,7 @@
   align-items: center;
 }
 
-.logo-link[class*="data-ally"]:focus::after {
+.logo-link[class*=data-ally]:focus::after {
   content: "";
   position: absolute;
   left: -10%;
@@ -152,7 +145,7 @@
   border-radius: 5px;
 }
 
-.logo-link[class*="back-arrow-ico-container"] {
+.logo-link[class*=back-arrow-ico-container] {
   -webkit-transform: translateX(-3px);
   -ms-transform: translateX(-3px);
   transform: translateX(-3px);
@@ -168,7 +161,6 @@
     left: 0;
   }
 }
-
 .nav-controls {
   position: relative;
   display: -webkit-box;
@@ -185,7 +177,6 @@
     right: -5px;
   }
 }
-
 .tool-tip {
   opacity: 0;
   -webkit-transform: translateY(6px);
@@ -224,7 +215,6 @@
     transform: translateY(6px);
   }
 }
-
 @keyframes pan-toolbar {
   0% {
     opacity: 0;
@@ -247,7 +237,6 @@
     transform: translateY(6px);
   }
 }
-
 .icon-wrapper {
   opacity: 0.5;
   position: relative;
@@ -273,7 +262,7 @@
   opacity: 1;
 }
 
-.icon-wrapper[class*="data-ally"]:focus::after {
+.icon-wrapper[class*=data-ally]:focus::after {
   content: "";
   position: absolute;
   left: 0;
@@ -296,11 +285,11 @@
     transform: scale(0.708);
     margin-left: 10px;
   }
+
   .icon-wrapper:hover {
     opacity: 0.5;
   }
 }
-
 .sun-rays {
   position: relative;
   right: -16px;
@@ -415,7 +404,6 @@
     transform: scale(0.5);
   }
 }
-
 @keyframes mask-to-sun {
   from {
     top: -8px;
@@ -430,7 +418,6 @@
     transform: scale(0.5);
   }
 }
-
 @-webkit-keyframes mask-to-moon {
   from {
     top: -25px;
@@ -445,7 +432,6 @@
     transform: scale(1);
   }
 }
-
 @keyframes mask-to-moon {
   from {
     top: -25px;
@@ -460,7 +446,6 @@
     transform: scale(1);
   }
 }
-
 @-webkit-keyframes to-sun {
   from {
     -webkit-transform: scale(1);
@@ -471,7 +456,6 @@
     transform: scale(0.5);
   }
 }
-
 @keyframes to-sun {
   from {
     -webkit-transform: scale(1);
@@ -482,7 +466,6 @@
     transform: scale(0.5);
   }
 }
-
 @-webkit-keyframes to-moon {
   from {
     -webkit-transform: scale(0.5);
@@ -493,7 +476,6 @@
     transform: scale(1);
   }
 }
-
 @keyframes to-moon {
   from {
     -webkit-transform: scale(0.5);
@@ -504,7 +486,6 @@
     transform: scale(1);
   }
 }
-
 @-webkit-keyframes expand-rays {
   from {
     -webkit-transform: scale(0.1);
@@ -515,7 +496,6 @@
     transform: scale(0.6);
   }
 }
-
 @keyframes expand-rays {
   from {
     -webkit-transform: scale(0.1);
@@ -526,7 +506,6 @@
     transform: scale(0.6);
   }
 }
-
 @-webkit-keyframes contract-rays {
   from {
     -webkit-transform: scale(0.6);
@@ -537,7 +516,6 @@
     transform: scale(0.1);
   }
 }
-
 @keyframes contract-rays {
   from {
     -webkit-transform: scale(0.6);
@@ -548,7 +526,6 @@
     transform: scale(0.1);
   }
 }
-
 .header-hidden {
   position: absolute;
   display: inline-block;
@@ -621,3 +598,5 @@
     left: -15px;
   }
 }
+
+/*# sourceMappingURL=navigation.css.map */

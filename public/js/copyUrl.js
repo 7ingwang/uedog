@@ -1,5 +1,5 @@
-document.getElementById("copyButton").addEventListener("click", copyToClipboard);
-    
+// document.getElementById("copyButton").addEventListener("click", copyToClipboard);
+
 let currentUrl = window.location;
 let copyTextContainer = document.getElementById("copyText");
 let toolTip = document.getElementById("toolTip");
