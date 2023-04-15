@@ -7,8 +7,8 @@ paginate = "4"
 summaryLength = "15"
 
 # 设置blackfriday为默认的Markdown引擎，打开HTML内联
-[markup]
-defaultMarkdownHandler = "blackfriday"
+# [markup]
+# defaultMarkdownHandler = "blackfriday"
 
 [[menu.main]]
 # URL = "about"
