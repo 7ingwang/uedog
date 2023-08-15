@@ -48,7 +48,7 @@
     position: relative;
     z-index: 10;
     margin:100px auto 120px;
-    max-width: 740px;
+    max-width: 880px;
 
     @media screen and (max-width: $desktop){
         padding-left: 53px;
@@ -74,7 +74,7 @@
 .article-hero-heading{
     font-size: 40px;
     margin-bottom: 25px;
-    font-weight: bold;
+    font-weight: 300;
     line-height: 1.32;
 
     @media screen and (max-width: $tablet){
@@ -444,6 +444,20 @@
 
 .post-content{
     padding: 80px 0 40px;
+    text-align: center;
+    h2,
+    h3,
+    p {
+        text-align: left;
+    }
+    h2 {
+        padding-left: 98px;
+    }
+    @media screen and (max-width: $tablet){
+        h2 {
+            padding-left: 0;
+        }
+    }
 }
 
 .post-content p:last-child{
@@ -470,6 +484,7 @@
     /*TABLET*/
     @media screen and (max-width: $tablet){
         margin-bottom: 60px;
+        padding-left: 98px;
     }
 
     &::after {

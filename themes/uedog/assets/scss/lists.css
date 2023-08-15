@@ -10,7 +10,7 @@ ul {
   margin: 0 auto;
   font-size: 18px;
   width: 100%;
-  max-width: 740px;
+  max-width: 880px;
 }
 
 /*DESKTOP*/
@@ -94,7 +94,7 @@ ol {
   transition: var(--color-mode-transition);
   font-size: 18px;
   width: 100%;
-  max-width: 740px;
+  max-width: 880px;
 }
 
 /*DESKTOP*/
